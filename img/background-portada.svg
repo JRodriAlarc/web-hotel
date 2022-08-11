@@ -4,19 +4,16 @@
       .cls-1, .cls-3 {
         fill: #fff;
       }
-
       .cls-1 {
         fill-rule: evenodd;
       }
-
       .cls-2 {
         fill: #f1faff;
       }
-
       .cls-3 {
         font-size: 416.667px;
         text-anchor: end;
-        font-family: Staatliches;
+        font-family: 'Staatliches', cursive;
       }
     </style>
   </defs>

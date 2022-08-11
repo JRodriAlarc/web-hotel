@@ -9,20 +9,19 @@
     text-decoration: none;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .container__body{
     position: relative;
     right: 0;
     transition: all 300ms;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
 header{
     width: 100%;
     height: 100px;
-    
+    font-family: 'Poppins', sans-serif;
     position: fixed; /*Se mantiene por encima de Todo*/
     top: 0;
     right: 0;
@@ -43,14 +42,12 @@ header{
     margin: auto;
     padding: 0px 20px; 
 }
-
 .seccion__Principal {
     background-color: #359EF9;
     border-radius: 1rem;
     padding: .5rem 1.2rem;
     color: white;
 }
-
 header .logo{
     height: 100%;
     display: flex;
@@ -165,7 +162,7 @@ nav ul li a{
     color: #373737;
 }
 
-/*.portada a {
+.portada a {
     display: block;
     text-align: center; 
     text-decoration: none;
@@ -188,24 +185,6 @@ nav ul li a{
     border: 2px solid #FABA0B;
     color: #FABA0B;
     box-shadow: 1px 1px 30px -5px #20202085;
-}*/
-
-.portada input[type="button"]{
-    padding: 10px 40px;
-    margin-top: 40px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    border-radius: 1em;
-    color: white;
-    background-color: #FABA0B;
-    box-shadow: 1px 1px 30px -5px #20202049;
-    cursor: pointer;
-    transition: box-shadow 500ms;
-}
-
-.portada input[type="button"]:hover{
-    box-shadow: 1px 1px 30px -5px #20202085;
 }
 
 .container__imagen{
@@ -217,11 +196,13 @@ nav ul li a{
     bottom: 10px;
     right: 0px;   /*Probar con 20px*/
     width: 670px; /* 500px */
-    animation: mover_imagen 6s ease-in-out infinite;
+    animation: moverimagen 6s ease-in-out infinite;
     transition: all 300ms;
 }
 
-/*ANGEL*/
+
+/* mios */
+
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -248,9 +229,9 @@ nav ul li a{
 .contacto {
     text-align: left;
 }
-/* Angel */
+/* mios */
 
-@keyframes mover_imagen {
+@keyframes moverimagen {
     0%{
         transform: translateY(10px);
     }
@@ -284,9 +265,16 @@ nav ul li a{
 }
 
 @media screen and (max-width: 760px) {
+
     .container__imagen img{
-        transform: scale(0);
-        animation: none;
+        /* transform: scale(0);
+        animation: none; */
+        display: none !important;
+    }
+    .container__imagen img{
+        /* transform: scale(0);
+        animation: none; */
+        display: none;
     }
 
     .portada .container__info{
@@ -304,7 +292,7 @@ nav ul li a{
     }
 
     .btn__menu{
-        display: flex; /* No funciona */
+        display: flex; /* No unciona */
     }
 
     nav{
@@ -368,3 +356,4 @@ nav ul li a{
         margin: 20px 0px 20px 0px;   
     }
 }
+
