@@ -10,6 +10,10 @@ body, input{
     font-family: 'Poppins', sans-serif;
 }
 
+.estilo-no-links{
+    text-decoration: none;
+}
+
 .container{
     position: relative;
     width: 100%;
@@ -226,8 +230,7 @@ form.sign-up-form{
     transform: translateX(800px);
 }
 
-/*Animation*/
-
+/*Animación*/
 .container.sign-up-mode::before{
     transform: translate(100%, -50%);
     right: 52%;
@@ -357,13 +360,25 @@ form.sign-up-form{
     }
 }
 
+.mensaje-error {
+    width: 300px;
+    border: 1px solid red;
+    margin-bottom: 1rem;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
 @media (max-width: 570px){
     form{
         padding: 0 1.5rem;
     }
 
     .image{
-         display: none;
+        display: none;
     }
 
     .panel .content{
